@@ -1,0 +1,173 @@
+<%- include ../publicView/res/style %>
+<div class="z-container">
+	<!--
+    	时间：2016-08-04
+    	描述：头部
+    -->
+	<%- include ../publicView/headAndTail/header %>
+	<!--
+    	
+    	时间：2016-08-04
+    	描述：菜单和内容
+    -->	
+    <div class="container z-clearFix z-centerInfo-box z-body">
+    	
+    	
+    	<div class="row">
+        	<!--
+            	
+            	时间：2016-08-05
+            	描述：侧栏
+            -->
+    		<%- include ../publicView/sidebar/sidebar %>
+    		<!--
+            	
+            	时间：2016-08-05
+            	描述：内容区块
+            -->
+    		<div class="z-rightContainer-box">
+				<!--
+                	
+                	时间：2016-08-15
+                	描述：标题
+                -->
+				<div class="z-rightContent-tittle">
+					
+					<div class="z-conTittle-tab">
+						
+						<ul class="z-tabContent-ul z-clearFix">
+							
+						    <li>
+						    	<a href="">添加文章</a>
+						    </li>
+						    
+						</ul>
+						
+					</div>
+					
+				</div>
+				<!--
+                	
+                	时间：2016-08-15
+                	描述：填写内容
+                -->
+                <form id="publicCheckFrom" action="/add" method="post">
+					
+    				<div class="z-userFilLin-box">
+    					
+    					<ul>
+    						
+    						<li class="z-activeTheme-Li z-clearFix">
+								
+								<p class="z-activeTittle-left">
+									<font>文章标题</font>
+									<b>*</b>
+								</p>
+								<input 
+									type="text" 
+									id="z-articleTitle-val"
+									class="form-control z-activeInfo-right"
+									datatype="s" 
+									name="z-articleTitle-val"
+									nullmsg="请输入活动主题！" 
+									errormsg="请填写正确活动主题格式！"
+								>
+    							<font class="checkText"></font>
+    							
+    						</li>
+    						
+    						<li class="z-activeTheme-Li z-clearFix">
+								<p class="z-activeTittle-left">
+									<font>文章分类</font>
+									<b>*</b>
+								</p>
+								<select class="form-control" style="width:200px;" id="z-articType-obj">
+								 	<% for(var i=0; i<list.length; i++) { %>
+										<option value="<%=list[i].addcolumn %>"><%=list[i].name %></option>
+									<%}%>
+								</select>
+    						</li>
+    						
+    						
+    						<li class="z-active-poster z-clearFix">
+								<p class="z-activeTittle-left">
+									<font>文章封面</font>
+								</p>
+								<div class="z-posterImg-upload  z-activeInfo-right">
+									<p class="z-upInfo-img">
+										<img src="images/posterImg.png">	
+										<span id="z-uploadMessage-user"></span>
+									</p>
+									<span class="z-changePoster-btn">上传封面</span>
+									<span class="z-deletePoster-btn" style="opacity: 0;">删除海报</span>
+									<p class="z-posterimg-wxts">温馨提示：图片尺寸建议为：900*525，图片小于4M</p>
+									<div class="progress progress-striped active" id="z-webuploadLoad-prog">
+									   <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="10" aria-valuemax="100">
+									   </div>
+									</div>
+								</div>
+    						</li>
+    						
+    						<li class="z-kingEditor-box z-clearFix">
+    							<p class="z-activeTittle-left">
+									<font>文章内容</font>
+								</p>
+    							<div class="z-edidtorTextrar-box z-activeInfo-right z-clearFix">
+    								<textarea id="z-articleContent-val" name="z-articleContent-val"></textarea>
+    							</div>
+    						</li>
+   
+    					</ul>
+    					
+    					<div class="z-agree-box">
+    						
+        					<p>
+        						
+        						<label>
+							      
+						        	<input type="checkbox">
+						        	<font>同意</font>
+							    
+	        					</label>
+
+    							<a href="" target="_blank">《有工程互动协议》</a>
+        						
+        					</p>
+
+    					</div>
+    					
+						<div class="z-fbBtn-box">
+						
+						    <p class="btnNo" style="width:213px;">
+						        <a href="javascript:void(0)" class="btn_Post" id="z-addArticle-btn">添加</a>
+						    </p>
+						    
+						</div>
+    					
+    				</div>
+    				
+				</form>
+        		
+    		</div>
+    		
+    	</div>	
+    	
+    </div>
+	<!--
+    	
+    	时间：2016-08-13
+    	描述：脚步
+    -->
+	<%- include ../publicView/headAndTail/footer %>
+	
+</div>
+<!--
+	时间：2017-02-21
+	描述：资源文件引入
+-->
+<%- include ../publicView/res/script %>
+
+
+
+
+

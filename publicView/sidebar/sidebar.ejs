@@ -1,0 +1,47 @@
+<div class="z-leftSidebar-box">
+	
+	<div class="z-sidebarlink-llist">
+		
+		<dl class="z-menuExtra-dl" style="border-top:none;">
+			
+			<dt class="z-menuTitle">
+				
+				<i class="z-iconMenu z-icoChild-styleOne"></i>
+				<font>功能</font>
+				
+			</dt> 
+			
+			<dd class="z-menuItem">
+				<% if (sidebar=="index") { %>
+					<a href="/" class="publicAcitveBack">首页 </a>
+				<% }else{%>
+					<a href="/">首页 </a>
+				<%}%>
+			</dd>
+			<dd class="z-menuItem">
+				<% if (sidebar=="addcolumn") { %>
+					<a href="/addcolumn" class="publicAcitveBack">添加文章分类</a>
+				<% }else{%>
+					<a href="/addcolumn">添加文章分类</a>
+				<%}%>
+			</dd>
+			<dd class="z-menuItem">
+				<% if (sidebar=="add") { %>
+					<a href="/add" class="publicAcitveBack">添加文章</a>
+				<% }else{%>
+					<a href="/add">添加文章</a>
+				<%}%>
+			</dd>
+			<dd class="z-menuItem">
+				<% if ((sidebar=="cgarticle")||(sidebar=="articleman")) { %>
+					<a href="/articleman" class="publicAcitveBack">文章管理</a>
+				<% }else{%>
+					<a href="/articleman">文章管理</a>
+				<%}%>
+			</dd>
+			
+		</dl>
+		
+	</div>
+	
+</div>

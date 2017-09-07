@@ -1,0 +1,77 @@
+<%- include ../publicView/res/style %>
+<div class="z-container">
+	<!--
+    	时间：2016-08-04
+    	描述：头部
+    -->
+	<%- include ../publicView/headAndTail/header %>
+	<!--
+    	
+    	时间：2016-08-04
+    	描述：菜单和内容
+    -->	
+    <div class="container z-clearFix z-centerInfo-box z-body">
+    	
+    	
+    	<div class="row">
+        	<!--
+            	
+            	时间：2016-08-05
+            	描述：侧栏
+            -->
+    		<%- include ../publicView/sidebar/sidebar %>
+    		<!--
+            	
+            	时间：2016-08-05
+            	描述：内容区块
+            -->
+    		<div class="z-rightContainer-box">
+				<!--
+                	
+                	时间：2016-08-15
+                	描述：标题
+                -->
+				<div class="z-rightContent-tittle">
+					
+					
+					<div class="z-conTittle-tab">
+						
+						<ul class="z-tabContent-ul z-clearFix">
+							
+						    <li style="width: 100%;">
+						    	<a href="" style="width:100%;text-align: center;"><%= content[0].title%></a>
+						    </li>
+						    
+						</ul>
+						
+					</div>
+					
+				</div>
+				
+				<div class="artic-contentInfo" style="padding:10px;">
+					<div><%- content[0].content%></div>
+				</div>
+				
+    		</div>
+    		
+    	</div>	
+    	
+    </div>
+	<!--
+    	
+    	时间：2016-08-13
+    	描述：脚步
+    -->
+	<%- include ../publicView/headAndTail/footer %>
+	
+</div>
+<!--
+	时间：2017-02-21
+	描述：资源文件引入
+-->
+<%- include ../publicView/res/script %>
+
+
+
+
+

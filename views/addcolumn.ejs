@@ -1,0 +1,130 @@
+<%- include ../publicView/res/style %>
+<div class="z-container">
+	<!--
+    	时间：2016-08-04
+    	描述：头部
+    -->
+	<%- include ../publicView/headAndTail/header %>
+	<!--
+    	
+    	时间：2016-08-04
+    	描述：菜单和内容
+    -->	
+    <div class="container z-clearFix z-centerInfo-box z-body">
+    	
+    	
+    	<div class="row">
+        	<!--
+            	
+            	时间：2016-08-05
+            	描述：侧栏
+            -->
+    		<%- include ../publicView/sidebar/sidebar %>
+    		<!--
+            	
+            	时间：2016-08-05
+            	描述：内容区块
+            -->
+    		<div class="z-rightContainer-box">
+				<!--
+                	
+                	时间：2016-08-15
+                	描述：标题
+                -->
+				<div class="z-rightContent-tittle">
+					
+					<div class="z-conTittle-tab">
+						
+						<ul class="z-tabContent-ul z-clearFix">
+							
+						    <li>
+						    	<a href="">添加文章分类</a>
+						    </li>
+						    
+						</ul>
+						
+					</div>
+					
+				</div>
+				<!--
+                	
+                	时间：2016-08-15
+                	描述：填写内容
+                -->
+                <form id="publicCheckFrom" action="/add" method="post">
+					
+    				<div class="z-userFilLin-box">
+    					
+    					<ul>
+    						
+    						<li class="z-activeTheme-Li z-clearFix">
+								
+								<p class="z-activeTittle-left">
+									<font>文章分类</font>
+									<b>*</b>
+								</p>
+								<input 
+									type="text" 
+									id="z-articleTitle-val"
+									class="form-control z-activeInfo-right"
+									datatype="s" 
+									name="z-articleTitle-val"
+									nullmsg="请输入文章分类！" 
+									errormsg="请填写正确文章分类！"
+								>
+    							<font class="checkText"></font>
+    						</li>
+    						
+    					</ul>
+    					
+    					<div class="z-agree-box">
+    						
+        					<p>
+        						
+        						<label>
+							      
+						        	<input type="checkbox">
+						        	<font>同意</font>
+							    
+	        					</label>
+
+    							<a href="" target="_blank">《有工程互动协议》</a>
+        						
+        					</p>
+
+    					</div>
+    					
+						<div class="z-fbBtn-box">
+						
+						    <p class="btnNo" style="width:213px;">
+						        <a href="javascript:void(0)" class="btn_Post" id="z-addArticle-btn">添加</a>
+						    </p>
+						    
+						</div>
+    					
+    				</div>
+    				
+				</form>
+        		
+    		</div>
+    		
+    	</div>	
+    	
+    </div>
+	<!--
+    	
+    	时间：2016-08-13
+    	描述：脚步
+    -->
+	<%- include ../publicView/headAndTail/footer %>
+</div>
+<!--
+	时间：2017-02-21
+	描述：资源文件引入
+-->
+<%- include ../publicView/res/script %>
+
+
+
+
+

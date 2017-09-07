@@ -1,0 +1,150 @@
+<%- include ../publicView/res/style %>
+<div class="z-container">
+	<!--
+    	时间：2016-08-04
+    	描述：头部
+    -->
+	<%- include ../publicView/headAndTail/header %>
+	<!--
+    	
+    	时间：2016-08-23
+    	描述：中部轮播
+    -->
+	<div class="z-loginCenter-box">
+		
+		<!--
+        	
+        	时间：2016-08-23
+        	描述：登录窗口
+        -->
+        <div class="z-loginInfo-body">
+        	
+        	<div class="z-loginIn-container">
+        		
+        		<div class="z-loginInfo-div">
+        		
+            		<div class="z-loginIn">
+                		
+            			<h2>商户登录</h2>
+            			<!--
+                        	
+                        	时间：2016-08-23
+                        	描述：错误提示
+                        -->
+            			<div class="tips-error">
+            				
+            				<p id="errmsg" style="color:red" class=""></p>
+            				
+            			</div>
+            			<!--
+                        	
+                        	时间：2016-08-23
+                        	描述：登录表单
+                        -->
+            			<form id="publicCheckFrom">
+            				
+            				<div class="z-loginMainly-box">
+            					
+            					<p class="login-account">
+            						
+            						<label class="glyphicon glyphicon-user" for="">	</label>
+            						
+            						<input 
+            							type="text" 
+            							name="username"
+            							id="z-login-username"
+            							placeholder="用户名"
+            							datatype="s" 
+										nullmsg="请输入用户名！" 
+										errormsg="请填写正确用户名格式！"
+            						>
+            					</p>
+            					
+            					<p class="login-account">
+            						<label class="glyphicon glyphicon-lock"></label>
+            						<input 
+            							type="password"
+            							name="password"
+            							id="z-login-password"
+            							placeholder="登录密码(6-16字母或者数字)"
+            							datatype="s6-18" 
+										nullmsg="请输入密码！" 
+										errormsg="请填写正确密码格式！"
+            						>
+            					</p>
+            					
+            				</div>
+            				
+            				<div class="z-login-memory">
+            					
+            					<label class="memory-account" for="z-knowPassword-che">
+            						
+            						<input type="checkbox" id="z-knowPassword-che"/>
+									<font>记住密码</font>		 
+									
+            					</label>
+            					
+        						<a class="forget-password" href="">忘记密码？</a>
+        						
+            				</div>
+            				
+            				<button class="z-btn-login" type="button">登录</button>
+            				
+            			</form>
+            			
+                	</div>
+        		
+        		</div>
+        		
+        	</div>
+        	
+        </div>
+		<!-- Swiper -->
+	    <div class="swiper-container swiper-container-h">
+	        
+	        <div class="swiper-wrapper">
+	            
+	            <div class="swiper-slide">
+	            	
+	            	<img src="/img/banner-1.jpg" alt="" />
+	            	
+	            </div>
+	            
+                  <div class="swiper-slide">
+	            	
+	            	<img src="/img/banner-2.jpg" alt="" />
+	            	
+	            </div>
+	            
+                  <div class="swiper-slide">
+	            	
+	            	<img src="/img/banner-3.jpg" alt="" />
+	            	
+	            </div>
+	            
+                  <div class="swiper-slide">
+	            	
+	            	<img src="/img/banner-4.jpg" alt="" />
+	            	
+	            </div>
+	            
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination swiper-pagination-h"></div>
+	   
+	    </div>
+		
+	</div>
+	<!--
+    	
+    	时间：2016-08-13
+    	描述：脚步
+    -->
+	<%- include ../publicView/headAndTail/footer %>
+	
+</div>
+<!--
+	时间：2017-02-21
+	描述：资源文件引入
+-->
+<%- include ../publicView/res/script %>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+:focus {
+	outline: 0;
+}
+a,  img, iframe {
+	border: none;
+	text-decoration:none;
+}
+ol, ul {
+	list-style: none;
+}
+input, textarea, select, button {
+	font-family: inherit;
+}
+select {
+	margin: inherit;
+}
+body {
+	background: #fff;
+	font-family: Arial;
+	color: #686868;
+}
+html {
+	-webkit-text-size-adjust: none;
+}
+
+.clear:after { 
+	content: "."; 
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear {
+	display: inline-block;
+}
+* html .clear {
+	height: 1%;
+}
+
+
+
+
